@@ -18,3 +18,11 @@ std::string Brain::identify(void) {
     
     return address;
 }
+
+void        Brain::setWeight(int i) {
+    this->weight = i;
+}
+
+int         Brain::getWeight() const {
+    return this->weight;
+}

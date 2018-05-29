@@ -10,10 +10,10 @@ Human::~Human(void) {
 
 }
 
-std::string Human::identify() {
+std::string Human::identify() { //if getBrain returned a pointer the '.' would become a '->'
     return this->brain.identify();
 }
 
-Brain &Human::getBrain() {
+Brain &Human::getBrain() { //gets reference of brain
     return this->brain;
 }

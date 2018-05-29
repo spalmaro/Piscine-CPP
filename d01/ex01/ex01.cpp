@@ -6,5 +6,5 @@ void    memoryLeak() {
 
     std::cout << *panthere << std::endl;   
 
-    delete panthere;
+    delete panthere; //using delete frees the memory
 }

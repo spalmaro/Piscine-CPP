@@ -1,13 +1,13 @@
 #include "Pony.hpp"
 
 Pony* ponyOnTheHeap() {
-    Pony* heapPony = new Pony("blue");
+    Pony* heapPony = new Pony("blue"); // the 'new' keyword creates the Pony instance on the heap
 
     return heapPony;
 }
 
 Pony ponyOnTheStack() {
-    Pony stackPony = Pony("white");
+    Pony stackPony = Pony("white"); // creating the instance directly without the 'new' keyword goes on the stack
     
     return stackPony;
 }
@@ -20,7 +20,7 @@ int main(void) {
     stackPony.taunt();
     heapPony->charm();
 
-    delete heapPony;
+    delete heapPony; //heapPony destructor called here
 
-    return 1;
+    return 1; //stackPony destructor called here
 }

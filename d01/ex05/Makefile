@@ -1,4 +1,4 @@
-NAME=brain
+NAME=a.out
 
 CXX=clang++
 CXXFLAGS=-Wall -Wextra -Werror

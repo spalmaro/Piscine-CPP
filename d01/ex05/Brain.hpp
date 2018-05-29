@@ -8,6 +8,11 @@ class Brain {
         ~Brain(void);
 
         std::string identify();
+        void        setWeight(int i);
+        int         getWeight() const ;
+
+    private:
+        int weight;
 };
 
 #endif

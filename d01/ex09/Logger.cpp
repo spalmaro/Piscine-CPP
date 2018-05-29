@@ -21,7 +21,7 @@ void        Logger::logToFile(std::string log) {
 std::string Logger::makeLogEntry(std::string msg) {
     std::time_t t = std::time(0);
     std::string tmp = std::asctime(std::localtime(&t));
-    tmp[tmp.length() - 1] = '\0';
+    tmp[tmp.length() - 1] = '\0'; //removes end of line that comes with asctime
     std::string log = "[" + tmp + "] " + msg;
 
     return log;
