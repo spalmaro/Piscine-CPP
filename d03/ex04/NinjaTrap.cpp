@@ -20,6 +20,7 @@ NinjaTrap::NinjaTrap(NinjaTrap const & src) {
 }
 
 NinjaTrap::NinjaTrap(void) {
+    this->_name = "NINJ4-TR4P";
     return ;
 }
 

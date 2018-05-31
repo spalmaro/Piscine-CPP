@@ -1,6 +1,7 @@
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 #include "NinjaTrap.hpp"
+#include "SuperTrap.hpp"
 #include <iostream>
 
 int     main( void ) {
@@ -36,5 +37,13 @@ int     main( void ) {
     ninja.ninjaShoebox(bob);
     ninja.ninjaShoebox(dm);
     ninja.ninjaShoebox(ninja);
+    std::cout << std::endl;
+
+    SuperTrap super = SuperTrap("SUPER");
+    super.FragTrap::vaulthunter_dot_exe("Fred");
+    super.ninjaShoebox(dm);
+    super.rangedAttack("Bob");
+    super.meleeAttack("Bob");
+    std::cout << std::endl;
     return 0;
 }

@@ -80,15 +80,15 @@ void        ScavTrap::challengeNewcomer(std::string const & target) {
         "smell Marvin's dirty socks",
         "pass the C++ pool at 42"
     };
-    // if (this->_energyPoints < 25)
-    //     std::cout << "You do not have enough energy" << std::endl;
-    // else {
-        // this->_energyPoints -= 25;
+    if (this->_energyPoints < 25)
+        std::cout << "You do not have enough energy" << std::endl;
+    else {
+        this->_energyPoints -= 25;
         
-    int choose = std::rand() % 5;
+        int choose = std::rand() % 5;
 
-    std::cout << this->_name << " challenges " << target << "to *" << randomChallenges[choose] << "* " << std::endl;
+        std::cout << this->_name << " challenges " << target << " to *" << randomChallenges[choose] << "* " << std::endl;
 
-    // }
+    }
 }
 

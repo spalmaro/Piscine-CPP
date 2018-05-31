@@ -14,6 +14,7 @@ ClapTrap::ClapTrap(ClapTrap const & src) {
 
 ClapTrap::ClapTrap(void):_hitPoints(100), _maxHitPoints(100), _energyPoints(100), _maxEnergyPoints(100),
 _level(1), _meleeAttackDmg(30), _rangedAttackDmg(20), _armorDmgReduction(5) {
+    this->_name = "CL4P-TR4P";
     std::cout << "*Booting up*" << std::endl;
     return ;
 }
