@@ -18,8 +18,6 @@ class SuperTrap: public FragTrap, public NinjaTrap {
 
         SuperTrap &  operator = (SuperTrap const & rhs);
         void        challengeNewcomer(std::string const & target);
-        void        rangedAttack(std::string const & target);
-        void        meleeAttack(std::string const & target);
 };
 
 #endif

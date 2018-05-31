@@ -72,3 +72,7 @@ void        NinjaTrap::ninjaShoebox(FragTrap & target) {
         target.vaulthunter_dot_exe("a random character");
     }
 }
+
+void        NinjaTrap::meleeAttack(std::string const & target) {
+    std::cout << "FR4G-TP " << this->_name << " melee attacks " << target << ", causing " << this->_meleeAttackDmg << " points of damage !" << std::endl;
+}

@@ -63,3 +63,7 @@ void        FragTrap::vaulthunter_dot_exe(std::string const & target) {
     }
 }
 
+void        FragTrap::rangedAttack(std::string const & target) {
+    std::cout << "FR4G-TP " << this->_name << " attacks " << target << " at range, causing " << this->_rangedAttackDmg << " points of damage !" << std::endl;
+}
+

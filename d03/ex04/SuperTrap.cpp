@@ -43,11 +43,3 @@ SuperTrap &  SuperTrap::operator = (SuperTrap const & rhs) {
 
     return *this;
 }
-
-void        SuperTrap::rangedAttack(std::string const & target) {
-    std::cout << "FR4G-TP " << this->_name << " attacks " << target << " at range, causing " << this->_rangedAttackDmg << " points of damage !" << std::endl;
-}
-
-void        SuperTrap::meleeAttack(std::string const & target) {
-    std::cout << "FR4G-TP " << this->_name << " melee attacks " << target << ", causing " << this->_meleeAttackDmg << " points of damage !" << std::endl;
-}
